@@ -27,6 +27,17 @@ color: #184f63 ;
     background-color: lightgray;
 }
 
+#portfolio .card-title{
+    color:#1f7798;
+    font-size: 1.2rem;
+}
+#portfolio .btn-outline-secondary:hover{
+    background-color: #1f7798;
+}
+#portfolio .card-text{
+    min-height: 120px;
+}
+
 #contact{
     background-color: white;
 }
@@ -38,4 +49,19 @@ color: #184f63 ;
     background-position: 50% 70%;
     background-image: url(https://codeinstitute.s3.eu-west-1.amazonaws.com/Bootstrap/background.webp);
     background-size: cover;
+}
+.sharp-corners, .sharp-corners *{
+    border-radius: 0;
+
+}
+.btn, .form-control{
+    border-radius: 0;
+}
+/* use bootstrap breakpoint for xl screen*/
+@media screen  and (min-width: 1200px){
+    /* Fixes all the exessive hight in  cards on big screen*/
+    #portfolio .card-text{
+        min-height: auto;
+    }
+    
 }
